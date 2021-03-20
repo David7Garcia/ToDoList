@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         permission()
         readFile()
         val btnAdd = findViewById<Button>(R.id.btnAdd)
+        val txtInstruction = findViewById<TextView>(R.id.txtInstruction)
         btnAdd.setOnClickListener { writeFile() }
         val ListView = findViewById<ListView>(R.id.txtList)
         ListView.setOnItemLongClickListener { parent, view, position, id ->
